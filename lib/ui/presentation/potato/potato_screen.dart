@@ -1,3 +1,4 @@
+import 'package:agro_helper/constants/app_colors.dart';
 import 'package:agro_helper/ui/presentation/potato/widgets/potato_info.dart';
 import 'package:flutter/material.dart';
 
@@ -8,10 +9,12 @@ class PotatoScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
+        backgroundColor: AppColors.screenBackground,
         appBar: AppBar(
           title: const Text("Kartof"),
           centerTitle: true,
-          backgroundColor: Colors.green,
+          foregroundColor: AppColors.white,
+          backgroundColor: AppColors.green,
         ),
         body: const PotatoInfo(),
       ),

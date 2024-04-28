@@ -1,3 +1,4 @@
+import 'package:agro_helper/constants/app_colors.dart';
 import 'package:agro_helper/ui/presentation/home/widgets/home_card_items.dart';
 import 'package:flutter/material.dart';
 
@@ -6,8 +7,9 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const SafeArea(
+    return SafeArea(
       child: Scaffold(
+        backgroundColor: AppColors.screenBackground,
         body: Column(
           children: [
             Expanded(

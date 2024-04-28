@@ -7,6 +7,8 @@ import 'package:agro_helper/ui/presentation/tomato/tomato_screen.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+import '../../../../constants/app_colors.dart';
+
 class HomeCardItems extends StatelessWidget {
   const HomeCardItems({super.key});
 
@@ -49,11 +51,11 @@ class HomeCardItems extends StatelessWidget {
                 Expanded(
                   child: SizedBox(
                     child: Card(
-                      color: Colors.green,
+                      color: AppColors.green,
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(20),
                       ),
-                      elevation: 4,
+                      elevation: 10,
                       child: Column(
                         children: [
                           ClipRRect(

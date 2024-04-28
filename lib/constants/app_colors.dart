@@ -8,4 +8,5 @@ class AppColors{
   static Color green = const Color(0xff193c0d);
   static Color white = Colors.white;
   static Color brown = const Color(0xff958934);
+  static Color screenBackground = const Color(0xffefebe5);
 }
