@@ -42,7 +42,7 @@ class _MainScreenState extends State<MainScreen> {
         ),
         body: screens[selectedIndex],
         bottomNavigationBar: CustomNavBar(
-          unselectedItemColor: AppColors.green,
+          unselectedItemColor: AppColors.brown,
           selectedItemColor: Colors.white,
           onTap: (int index) {
             setState(() {

@@ -4,6 +4,7 @@ import 'package:agro_helper/ui/presentation/home/home_screen.dart';
 import 'package:agro_helper/ui/presentation/potato/potato_screen.dart';
 import 'package:agro_helper/ui/presentation/strawberry/strawberry_screen.dart';
 import 'package:agro_helper/ui/presentation/tomato/tomato_screen.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class HomeCardItems extends StatelessWidget {
@@ -43,31 +44,39 @@ class HomeCardItems extends StatelessWidget {
                 ),
               );
             },
-            child: Card(
-              color: Colors.green,
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(20),
-              ),
-              elevation: 4,
-              child: Column(
-                children: [
-                  ClipRRect(
-                    borderRadius: BorderRadius.circular(20),
-                    child: Image.asset(
-                      data.imageLink,
-                      fit: BoxFit.fill,
+            child: Column(
+              children: [
+                Expanded(
+                  child: SizedBox(
+                    child: Card(
+                      color: Colors.green,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(20),
+                      ),
+                      elevation: 4,
+                      child: Column(
+                        children: [
+                          ClipRRect(
+                            borderRadius: BorderRadius.circular(20),
+                            child: Image.asset(
+                              data.imageLink,
+                              fit: BoxFit.fill,
+                            ),
+                          ),
+                          Text(
+                            data.name,
+                            style: const TextStyle(
+                              fontSize: 20,
+                              fontWeight: FontWeight.w600,
+                              color: Colors.white,
+                            ),
+                          ),
+                        ],
+                      ),
                     ),
                   ),
-                  Text(
-                    data.name,
-                    style: const TextStyle(
-                      fontSize: 20,
-                      fontWeight: FontWeight.w600,
-                      color: Colors.white,
-                    ),
-                  ),
-                ],
-              ),
+                ),
+              ],
             ),
           ),
         );

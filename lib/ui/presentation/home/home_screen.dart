@@ -11,7 +11,9 @@ class HomeScreen extends StatelessWidget {
         body: Column(
           children: [
             Expanded(
-              child: SizedBox(child: HomeCardItems()),
+              child: SizedBox(
+                child: HomeCardItems(),
+              ),
             ),
           ],
         ),

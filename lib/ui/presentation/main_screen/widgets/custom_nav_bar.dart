@@ -31,7 +31,7 @@ class _CustomNavBarState extends State<CustomNavBar> {
     return SizedBox(
       height: kBottomNavigationBarHeight + 12,
       child: BottomNavigationBar(
-        backgroundColor: AppColors.pink,
+        backgroundColor: AppColors.green,
         type: BottomNavigationBarType.fixed,
         iconSize: 24,
         onTap: _onTap,
