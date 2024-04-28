@@ -16,7 +16,9 @@ class StrawberryScreen extends StatelessWidget {
         body: const Column(
           children: [
             Expanded(
-              child: SizedBox(child: StrawberryInfo()),
+              child: SizedBox(
+                child: StrawberryInfo(),
+              ),
             ),
           ],
         ),
