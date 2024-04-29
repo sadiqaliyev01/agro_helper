@@ -31,7 +31,7 @@ class _CustomNavBarState extends State<CustomNavBar> {
     return SizedBox(
       height: kBottomNavigationBarHeight + 12,
       child: BottomNavigationBar(
-        backgroundColor: AppColors.green,
+        backgroundColor: AppColors.brown2,
         type: BottomNavigationBarType.fixed,
         iconSize: 24,
         onTap: _onTap,
@@ -44,12 +44,12 @@ class _CustomNavBarState extends State<CustomNavBar> {
             icon: Icon(Icons.home),
           ),
           BottomNavigationBarItem(
-            label: 'Yüklə',
-            icon: Icon(Icons.upload),
-          ),
-          BottomNavigationBarItem(
             label: 'Menyu',
             icon: Icon(Icons.menu),
+          ),
+          BottomNavigationBarItem(
+            label: 'Yüklə',
+            icon: Icon(Icons.upload),
           ),
           BottomNavigationBarItem(
             label: 'Profil',

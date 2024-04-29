@@ -10,7 +10,7 @@ class ProfileScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: AppColors.screenBackground,
-      body: ProfileView(),
+      body: const ProfileView(),
     );
   }
 }

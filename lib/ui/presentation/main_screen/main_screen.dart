@@ -19,8 +19,8 @@ class _MainScreenState extends State<MainScreen> {
 
   final List<Widget> screens = [
     const HomeScreen(),
-    const UploadScreen(),
     const MenuScreen(),
+    const UploadScreen(),
     const ProfileScreen(),
   ];
 
@@ -42,8 +42,8 @@ class _MainScreenState extends State<MainScreen> {
         ),
         body: screens[selectedIndex],
         bottomNavigationBar: CustomNavBar(
-          unselectedItemColor: AppColors.brown,
-          selectedItemColor: Colors.white,
+          unselectedItemColor: AppColors.white,
+          selectedItemColor: AppColors.selectedIcon,
           onTap: (int index) {
             setState(() {
               selectedIndex = index;

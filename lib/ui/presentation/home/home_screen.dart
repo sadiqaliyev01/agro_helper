@@ -10,7 +10,7 @@ class HomeScreen extends StatelessWidget {
     return SafeArea(
       child: Scaffold(
         backgroundColor: AppColors.screenBackground,
-        body: Column(
+        body: const Column(
           children: [
             Expanded(
               child: SizedBox(

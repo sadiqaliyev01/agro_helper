@@ -9,4 +9,6 @@ class AppColors{
   static Color white = Colors.white;
   static Color brown = const Color(0xff958934);
   static Color screenBackground = const Color(0xffefebe5);
+  static Color brown2 = const Color(0xff26130b);
+  static Color selectedIcon = const Color(0xffd1d8bd);
 }

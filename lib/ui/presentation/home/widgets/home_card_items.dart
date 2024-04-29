@@ -4,7 +4,6 @@ import 'package:agro_helper/ui/presentation/home/home_screen.dart';
 import 'package:agro_helper/ui/presentation/potato/potato_screen.dart';
 import 'package:agro_helper/ui/presentation/strawberry/strawberry_screen.dart';
 import 'package:agro_helper/ui/presentation/tomato/tomato_screen.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../constants/app_colors.dart';
