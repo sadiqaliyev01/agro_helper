@@ -1,5 +1,7 @@
 import 'package:agro_helper/constants/app_colors.dart';
+import 'package:agro_helper/ui/presentation/privacy/privacy_policy_screen.dart';
 import 'package:agro_helper/ui/presentation/profile/widgets/profile_element_buttons.dart';
+import 'package:agro_helper/ui/presentation/settings/settings_screen.dart';
 import 'package:flutter/material.dart';
 
 class ProfileView extends StatelessWidget {
@@ -34,13 +36,19 @@ class ProfileView extends StatelessWidget {
           ProfileElementButtons(
             title: "Settings",
             icon: Icons.settings,
-            onTap: () {},
+            onTap: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (_) => const SettingsScreen()));
+            },
           ),
           const SizedBox(height: 12),
           ProfileElementButtons(
             title: "Privacy Policy",
             icon: Icons.privacy_tip_outlined,
-            onTap: () {},
+            onTap: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (_) => const PrivacyPolicyScreen()));
+            },
           ),
           const SizedBox(height: 12),
           ProfileElementButtons(
