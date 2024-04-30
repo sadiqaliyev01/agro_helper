@@ -1,4 +1,4 @@
-import 'package:agro_helper/data/models/local/fruits_and_vegetables.dart';
+import 'package:agro_helper/data/local/fruits_and_vegetables.dart';
 import 'package:agro_helper/ui/presentation/apple/apple_screen.dart';
 import 'package:agro_helper/ui/presentation/home/home_screen.dart';
 import 'package:agro_helper/ui/presentation/potato/potato_screen.dart';

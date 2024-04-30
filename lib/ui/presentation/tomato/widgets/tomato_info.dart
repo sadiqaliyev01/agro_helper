@@ -1,4 +1,4 @@
-import 'package:agro_helper/data/models/local/tomato_data.dart';
+import 'package:agro_helper/data/local/tomato_data.dart';
 import 'package:flutter/cupertino.dart';
 
 class TomatoInfo extends StatelessWidget {

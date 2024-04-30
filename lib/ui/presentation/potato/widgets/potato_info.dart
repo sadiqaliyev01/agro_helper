@@ -1,5 +1,6 @@
-import 'package:agro_helper/data/models/local/potato_data.dart';
 import 'package:flutter/material.dart';
+
+import '../../../../data/local/potato_data.dart';
 
 class PotatoInfo extends StatelessWidget {
   const PotatoInfo({super.key});

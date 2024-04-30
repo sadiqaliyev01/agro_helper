@@ -1,4 +1,4 @@
-import 'package:agro_helper/data/models/local/apple_data.dart';
+import 'package:agro_helper/data/local/apple_data.dart';
 import 'package:flutter/material.dart';
 
 class AppleInfo extends StatelessWidget {

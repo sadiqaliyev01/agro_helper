@@ -1,4 +1,4 @@
-import 'package:agro_helper/data/models/local/strawberry_data.dart';
+import 'package:agro_helper/data/local/strawberry_data.dart';
 import 'package:flutter/material.dart';
 
 class StrawberryInfo extends StatelessWidget {
