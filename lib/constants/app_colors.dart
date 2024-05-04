@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class AppColors{
+class AppColors {
   AppColors._();
 
   static Color pink = const Color(0xffFF43B7);

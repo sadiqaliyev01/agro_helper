@@ -22,6 +22,5 @@ class PrivacyPolicyScreen extends StatelessWidget {
           ),
         )),
       ),
-    );
   }
 }
