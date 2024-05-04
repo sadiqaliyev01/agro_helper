@@ -10,17 +10,20 @@ class PrivacyPolicyScreen extends StatelessWidget {
     return SafeArea(
       child: Scaffold(
         backgroundColor: AppColors.screenBackground,
-        appBar: AppBar(title: const Text("Privacy Policy"),
-        backgroundColor: AppColors.screenBackground,
+        appBar: AppBar(
+          title: const Text("Privacy Policy"),
+          backgroundColor: AppColors.screenBackground,
         ),
         body: const SingleChildScrollView(
-            child: Padding(
-          padding: EdgeInsets.all(10.0),
-          child: Text(
-            AppStrings.privacyPolicy,
-            style: TextStyle(fontSize: 12, color: Colors.black),
+          child: Padding(
+            padding: EdgeInsets.all(10.0),
+            child: Text(
+              AppStrings.privacyPolicy,
+              style: TextStyle(fontSize: 12, color: Colors.black),
+            ),
           ),
-        )),
+        ),
       ),
+    );
   }
 }
