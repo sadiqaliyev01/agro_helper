@@ -3,7 +3,6 @@ import 'dart:io';
 import 'package:agro_helper/constants/app_colors.dart';
 import 'package:agro_helper/data/local/diseases_and_images.dart';
 import 'package:agro_helper/ui/presentation/upload/widgets/upload_photo_button.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 

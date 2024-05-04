@@ -12,4 +12,5 @@ class AppColors{
   static Color brown2 = const Color(0xff26130b);
   static Color selectedIcon = const Color(0xffd1d8bd);
   static Color black = Colors.black;
+  static const profileButtonsBackground = Color(0xffbfcca3);
 }
