@@ -43,10 +43,10 @@ class _CustomNavBarState extends State<CustomNavBar> {
             label: 'Əsas Ekran',
             icon: Icon(Icons.home),
           ),
-          BottomNavigationBarItem(
-            label: 'Menyu',
-            icon: Icon(Icons.menu),
-          ),
+          // BottomNavigationBarItem(
+          //   label: 'Menyu',
+          //   icon: Icon(Icons.menu),
+          // ),
           BottomNavigationBarItem(
             label: 'Yüklə',
             icon: Icon(Icons.upload),

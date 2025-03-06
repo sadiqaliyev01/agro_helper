@@ -24,12 +24,20 @@ class _SoilDataScreen extends State<SoilDataScreen> {
                 children: [
                   Column(
                     children: [
-                      Image.asset("assets/jpeg_images/soil_graphic.jpg"),
-                      const Text(
-                        "pH: The soil is more acidic than ideal, which can inhibit nutrient availability and affect plant growth.\nOrganic Matter: Slightly below the optimal range, indicating potential improvements in soil structure and moisture retention.\nNitrogen (N): Higher than optimal, suggesting recent over-application of nitrogen-rich fertilizers.\nPhosphorus (P): Levels are low, which could limit root development and plant growth.\nPotassium (K): Within the optimal range, indicating sufficient availability for maintaining proper plant functions.\nCalcium (Ca), Magnesium (Mg), and Copper (Cu): All within optimal ranges, supporting good plant structure and enzymatic functions.Sulfur (S), Zinc (Zn), Manganese (Mn), and Boron (B): These nutrients are low, which can affect various plant metabolic processes and overall health.",
-                        style: TextStyle(
-                          fontSize: 16,
-                          fontWeight: FontWeight.w500,
+                      Image.asset("assets/jpeg_images/soil_data_2.jpg"),
+                      const SizedBox(height: 10),
+                      const Padding(
+                        padding: EdgeInsets.all(8.0),
+                        child: Text(
+                          """Təhlil
+pH: Torpaq idealdan daha turşudur, bu da qida maddələrinin mövcudluğunu maneə törədə və bitkilərin inkişafına təsir göstərə bilər.\nÜzvi Maddə: Torpağın strukturunda və nəm saxlamada potensial yaxşılaşmaları göstərən optimal diapazondan bir qədər aşağıdır.\nAzot (N): Optimaldan yüksəkdir, bu, azotla zəngin gübrələrin son vaxtlarda həddindən artıq tətbiq edilməsini nəzərdə tutur.\nFosfor (P): Səviyyələr aşağıdır, bu da kök inkişafını və bitki böyüməsini məhdudlaşdıra bilər.\nKalium (K): Optimal diapazonda, bitkinin düzgün funksiyalarını saxlamaq üçün kifayət qədər mövcudluğu göstərir.\nKalsium (Ca), Maqnezium (Mg) və Mis (Cu): Hamısı optimal diapazonda, yaxşı bitki quruluşunu və fermentativ funksiyaları dəstəkləyir.\nKükürd (S), Sink (Zn), Manqan (Mn) və Bor (B): Bu qida maddələri aşağıdır, bu da müxtəlif bitki metabolik prosesləri və ümumi sağlamlığa təsir göstərə bilər.
+
+Tövsiyələr
+Əhəng tətbiqi: pH səviyyəsini yüksəltmək üçün əhəng tətbiq etmək tövsiyə olunur. Bu, digər qida maddələrinin mövcudluğunu artırmağa kömək edəcəkdir.\nAzot Tətbiqlərini Azaldın: Azotun yüksək səviyyələrini nəzərə alaraq, qida maddələrinin yuyulmasının və ətraf mühitə potensial zərərin qarşısını almaq üçün azotlu gübrələrin tətbiqini azaldın.\nFosforlu gübrə: Səviyyələri artırmaq üçün fosforda yüksək bir başlanğıc gübrə tətbiq edin, xüsusilə də qarşıdan gələn əkin mövsümü üçün faydalıdır.\nÜzvi Maddələrin Təkmilləşdirilməsi: Üzvi maddələrin tərkibini artırmaq üçün üzvi kompost və ya yaşıl peyin əlavə edin ki, bu da torpağın strukturunu və suyun saxlanmasını yaxşılaşdıracaq.\nMikronutrient əlavəsi: Məhsul tələbatını ödəmək və mövcud çatışmazlıqları aradan qaldırmaq üçün sink, manqan və bor gübrələrinin tətbiqi nəzərə alınmalıdır.\nDaimi Monitorinq: Həyata keçirilən strategiyaların effektivliyinə nəzarət etmək və lazımi düzəlişlər etmək üçün ildə iki dəfə torpaq sınaqları keçirin.""",
+                          style: TextStyle(
+                            fontSize: 16,
+                            fontWeight: FontWeight.w500,
+                          ),
                         ),
                       ),
                       const SizedBox(height: 20),
