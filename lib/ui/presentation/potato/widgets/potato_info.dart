@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import '../../../../data/local/potato_data.dart';
 
 class PotatoInfo extends StatelessWidget {
@@ -18,8 +17,7 @@ class PotatoInfo extends StatelessWidget {
               children: [
                 const Text(
                   "Kartof Nədir?",
-                  style:
-                  TextStyle(fontWeight: FontWeight.w600, fontSize: 20),
+                  style: TextStyle(fontWeight: FontWeight.w600, fontSize: 20),
                 ),
                 const SizedBox(
                   height: 10,
@@ -36,8 +34,7 @@ class PotatoInfo extends StatelessWidget {
                 ),
                 const Text(
                   "Kartof hansı iqlim şəraitində yetişir?",
-                  style:
-                  TextStyle(fontWeight: FontWeight.w600, fontSize: 20),
+                  style: TextStyle(fontWeight: FontWeight.w600, fontSize: 20),
                 ),
                 const SizedBox(
                   height: 10,
@@ -54,8 +51,7 @@ class PotatoInfo extends StatelessWidget {
                 ),
                 const Text(
                   "Kartof necə yetişdirilir?",
-                  style:
-                  TextStyle(fontWeight: FontWeight.w600, fontSize: 20),
+                  style: TextStyle(fontWeight: FontWeight.w600, fontSize: 20),
                 ),
                 const SizedBox(
                   height: 10,
@@ -72,8 +68,7 @@ class PotatoInfo extends StatelessWidget {
                 ),
                 const Text(
                   "Hansı gübrələr kartofa faydalıdır?",
-                  style:
-                  TextStyle(fontWeight: FontWeight.w600, fontSize: 20),
+                  style: TextStyle(fontWeight: FontWeight.w600, fontSize: 20),
                 ),
                 const SizedBox(
                   height: 10,
@@ -90,8 +85,7 @@ class PotatoInfo extends StatelessWidget {
                 ),
                 const Text(
                   "Necə gübrələmək olar?",
-                  style:
-                  TextStyle(fontWeight: FontWeight.w600, fontSize: 20),
+                  style: TextStyle(fontWeight: FontWeight.w600, fontSize: 20),
                 ),
                 const SizedBox(
                   height: 10,
@@ -108,8 +102,7 @@ class PotatoInfo extends StatelessWidget {
                 ),
                 const Text(
                   "Kartofun faydaları nələrdir?",
-                  style:
-                  TextStyle(fontWeight: FontWeight.w600, fontSize: 20),
+                  style: TextStyle(fontWeight: FontWeight.w600, fontSize: 20),
                 ),
                 const SizedBox(
                   height: 10,
@@ -126,8 +119,7 @@ class PotatoInfo extends StatelessWidget {
                 ),
                 const Text(
                   "Kartofda görünə bilən xəstəliklər",
-                  style:
-                  TextStyle(fontWeight: FontWeight.w600, fontSize: 20),
+                  style: TextStyle(fontWeight: FontWeight.w600, fontSize: 20),
                 ),
                 const SizedBox(
                   height: 10,
@@ -144,8 +136,7 @@ class PotatoInfo extends StatelessWidget {
                 ),
                 const Text(
                   "Xəstəliyin simptomları və mübarizə üsulları",
-                  style:
-                  TextStyle(fontWeight: FontWeight.w600, fontSize: 20),
+                  style: TextStyle(fontWeight: FontWeight.w600, fontSize: 20),
                   textAlign: TextAlign.center,
                 ),
                 const SizedBox(

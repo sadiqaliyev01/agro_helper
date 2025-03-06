@@ -3,14 +3,14 @@ import 'package:flutter/material.dart';
 class AppColors {
   AppColors._();
 
-  static Color pink = const Color(0xffFF43B7);
-  static Color turquoise = const Color(0xff42AB9C);
-  static Color green = const Color(0xff193c0d);
-  static Color white = Colors.white;
-  static Color brown = const Color(0xff958934);
-  static Color screenBackground = const Color(0xffefebe5);
-  static Color brown2 = const Color(0xff26130b);
-  static Color selectedIcon = const Color(0xffd1d8bd);
+  static const Color pink = Color(0xffFF43B7);
+  static const Color turquoise = Color(0xff42AB9C);
+  static const Color green = Color(0xff193c0d);
+  static const Color white = Colors.white;
+  static const Color brown = Color(0xff958934);
+  static const Color screenBackground = Color(0xffefebe5);
+  static const Color brown2 = Color(0xff26130b);
+  static const Color selectedIcon = Color(0xffd1d8bd);
   static Color black = Colors.black;
   static const profileButtonsBackground = Color(0xffbfcca3);
 }

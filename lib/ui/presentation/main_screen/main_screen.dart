@@ -1,5 +1,6 @@
 import 'package:agro_helper/ui/presentation/home/home_screen.dart';
 import 'package:agro_helper/ui/presentation/main_screen/widgets/custom_nav_bar.dart';
+import 'package:agro_helper/ui/presentation/main_screen/widgets/main_screen_app_bar.dart';
 import 'package:agro_helper/ui/presentation/menu/menu_screen.dart';
 import 'package:agro_helper/ui/presentation/profile/profile_screen.dart';
 import 'package:agro_helper/ui/presentation/upload/upload_screen.dart';
@@ -28,18 +29,7 @@ class _MainScreenState extends State<MainScreen> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        appBar: AppBar(
-          title: const Text(
-            "Agro Helper",
-            style: TextStyle(
-              fontSize: 24,
-              fontWeight: FontWeight.w600,
-            ),
-          ),
-          foregroundColor: AppColors.white,
-          centerTitle: true,
-          backgroundColor: AppColors.green,
-        ),
+        appBar: const MainScreenAppBar(),
         body: screens[selectedIndex],
         bottomNavigationBar: CustomNavBar(
           unselectedItemColor: AppColors.white,

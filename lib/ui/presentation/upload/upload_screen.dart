@@ -70,7 +70,7 @@ class _UploadScreenState extends State<UploadScreen> {
                         ),
                         TextSpan(
                           text: diseaseName.toString(),
-                          style: TextStyle(
+                          style: const TextStyle(
                             color: AppColors.green,
                             fontWeight: FontWeight.w500,
                             fontSize: 16,
@@ -96,7 +96,7 @@ class _UploadScreenState extends State<UploadScreen> {
                         ),
                         TextSpan(
                           text: recommendation.toString(),
-                          style: TextStyle(
+                          style: const TextStyle(
                             color: AppColors.green,
                             fontWeight: FontWeight.w500,
                             fontSize: 16,

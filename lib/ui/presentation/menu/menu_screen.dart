@@ -7,9 +7,9 @@ class MenuScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return const Scaffold(
       backgroundColor: AppColors.screenBackground,
-      body: const Text("MENYU"),
+      body: Text("MENYU"),
     );
   }
 }

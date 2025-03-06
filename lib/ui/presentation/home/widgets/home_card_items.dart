@@ -1,9 +1,10 @@
-import 'package:agro_helper/data/local/fruits_and_vegetables.dart';
-import 'package:agro_helper/ui/presentation/apple/apple_screen.dart';
+import 'package:agro_helper/data/local/categories.dart';
+import 'package:agro_helper/ui/presentation/agronomists/agronomists_screen.dart';
+import 'package:agro_helper/ui/presentation/diseases/diseases_screen.dart';
 import 'package:agro_helper/ui/presentation/home/home_screen.dart';
-import 'package:agro_helper/ui/presentation/potato/potato_screen.dart';
-import 'package:agro_helper/ui/presentation/strawberry/strawberry_screen.dart';
-import 'package:agro_helper/ui/presentation/tomato/tomato_screen.dart';
+import 'package:agro_helper/ui/presentation/manure/manure_screen.dart';
+import 'package:agro_helper/ui/presentation/soil_analyse/soil_analyse_screen.dart';
+import 'package:agro_helper/ui/presentation/vegetables/vegetables_screen.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../constants/app_colors.dart';
@@ -13,16 +14,18 @@ class HomeCardItems extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    List<FruitsAndVegetables> fAndVData = FruitsAndVegetables.fAndVData;
-
+    List<Categories> category = Categories.categories;
     return GridView.builder(
+      primary: false,
+      shrinkWrap: true,
       gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
         crossAxisCount: 2,
-        mainAxisExtent: 240,
+        // mainAxisSpacing: 10,
+        // mainAxisExtent: 260,
       ),
-      itemCount: fAndVData.length,
+      itemCount: category.length,
       itemBuilder: (context, index) {
-        final data = fAndVData[index];
+        final categoryData = category[index];
         return Padding(
           padding: const EdgeInsets.all(8.0),
           child: GestureDetector(
@@ -31,14 +34,17 @@ class HomeCardItems extends StatelessWidget {
                 context,
                 MaterialPageRoute(
                   builder: (context) {
-                    if (data.name == 'Alma') {
-                      return const AppleScreen();
-                    } else if (data.name == 'Kartof') {
-                      return const PotatoScreen();
-                    } else if (data.name == 'Çiyələk') {
-                      return const StrawberryScreen();
-                    } else if (data.name == 'Pomidor') {
-                      return const TomatoScreen();
+                    if (categoryData.name == 'Meyvə-tərəvəzlər') {
+                      return const VegetablesScreen();
+                    } else if (categoryData.name == 'Gübrələr') {
+                      return const ManureScreen();
+                    } else if (categoryData.name == 'Bitki Xəstəlikləri') {
+                      return const DiseasesScreen();
+                    } else if (categoryData.name == 'Torpaq Analizi') {
+                      return  const SoilAnalyseScreen();
+                    }
+                    else if (categoryData.name == 'Aqronomlar') {
+                      return  const AgronomistsScreen();
                     }
                     return const HomeScreen();
                   },
@@ -47,34 +53,26 @@ class HomeCardItems extends StatelessWidget {
             },
             child: Column(
               children: [
-                Expanded(
-                  child: SizedBox(
-                    child: Card(
-                      color: AppColors.green,
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(20),
-                      ),
-                      elevation: 10,
-                      child: Column(
-                        children: [
-                          ClipRRect(
-                            borderRadius: BorderRadius.circular(20),
-                            child: Image.asset(
-                              data.imageLink,
-                              fit: BoxFit.fill,
-                            ),
-                          ),
-                          Text(
-                            data.name,
-                            style: const TextStyle(
-                              fontSize: 20,
-                              fontWeight: FontWeight.w600,
-                              color: Colors.white,
-                            ),
-                          ),
-                        ],
+                ClipRRect(
+                  borderRadius: BorderRadius.circular(20),
+                  child: Expanded(
+                    child: SizedBox(
+                      child: Image.asset(
+                        height: 140,
+                        width: 190,
+                        categoryData.imageLink,
+                        fit: BoxFit.fill,
                       ),
                     ),
+                  ),
+                ),
+                const SizedBox(height: 5),
+                Text(
+                  categoryData.name,
+                  style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.w600,
+                    color: AppColors.black,
                   ),
                 ),
               ],
